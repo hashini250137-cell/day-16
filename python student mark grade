@@ -1,0 +1,19 @@
+name = input("Enter student name: ")
+marks = list(map(int, input("Enter 5 marks: ").split()))
+
+avg = sum(marks) / 5
+
+if avg >= 90:
+    grade = "A+"
+elif avg >= 80:
+    grade = "A"
+elif avg >= 70:
+    grade = "B"
+elif avg >= 60:
+    grade = "C"
+else:
+    grade = "F"
+
+print("Name:", name)
+print("Average:", avg)
+print("Grade:", grade)
